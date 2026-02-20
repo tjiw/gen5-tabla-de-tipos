@@ -5,6 +5,7 @@ Este programa calcula, dados los tipos de un Pokémon, sus resistencias y debili
 Tener instalado el compilador gcc en tu máquina.
 
 ## Modo de uso
+Primeramente, descarga el código fuente en formato zip.
 ### Windows
 Ejecuta el .bat en la carpeta del código.
 ### Linux/Mac
