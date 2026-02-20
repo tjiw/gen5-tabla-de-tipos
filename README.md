@@ -7,7 +7,7 @@ Tener instalado el compilador gcc en tu máquina.
 ## Modo de uso
 ### Windows
 Ejecuta el .bat en la carpeta del código.
-### Linux
+### Linux/Mac
 Ejecuta en terminal los comandos: 
 #### gcc -o tablatipos tablatipos.c funciones.c
 #### ./tablatipos
