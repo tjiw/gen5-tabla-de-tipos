@@ -9,5 +9,5 @@ Tener instalado el compilador gcc en tu máquina.
 Ejecuta el .bat en la carpeta del código.
 ### Linux
 Ejecuta en terminal los comandos: 
-gcc -o tablatipos tablatipos.c funciones.c
-./tablatipos
+#### gcc -o tablatipos tablatipos.c funciones.c
+#### ./tablatipos
