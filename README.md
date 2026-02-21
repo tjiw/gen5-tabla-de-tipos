@@ -12,3 +12,5 @@ Ejecuta el .bat en la carpeta del código.
 Ejecuta en terminal los comandos: 
 #### gcc -o tablatipos tablatipos.c funciones.c
 #### ./tablatipos
+Alternativamente, escribe en el terminal:
+#### make
