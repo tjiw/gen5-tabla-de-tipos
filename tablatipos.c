@@ -53,10 +53,12 @@ inicio:
 
     for (int i = 0; i < NUMTIPOS; i++){
         tipoAString(tablaEfectividades[i], tipo);
-        printf("%s: x%.2f\n", tipo, tablaEfectividades[i].efectividad);
+        if (tablaEfectividades[i].efectividad != 1.0)
+            printf("%s: x%.2f\n", tipo, tablaEfectividades[i].efectividad);
     }
 
-    fputc('\n', stdout);
+    printf("\nPulsa cualquier secuencia de teclas y ENTER para cerrar\n");
+    scanf("%*s");
 
     return 0;
 }
