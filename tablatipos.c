@@ -6,21 +6,37 @@ void swap(struct efectividad* e1, struct efectividad* e2);
 
 int main(){
 
+    _Bool error = 0;
     struct pokemon p;
     struct efectividad tablaEfectividades[NUMTIPOS];
     char tipo[10]; //Buffer para imprimir los tipos
 
-    printf("Este programa esta pensado para juegos de pokemon hasta la quinta generacion.\n\n");
+    printf("Este programa esta pensado para juegos de pokemon hasta la quinta generacion.\n");
 inicio:
-    printf("Selecciona los dos tipos de tu pokemon de la siguiente tabla, dejando un espacio entre medias:\n");
+    printf("\nSelecciona los dos tipos de tu pokemon de la siguiente tabla, dejando un espacio entre medias:\n");
     printf("Tipo nulo significa que el pokemon tiene un solo tipo, siendo el otro \"nulo\".\n\n");
-    printf("0. Normal\t1. Fuego\t2. Agua\t\t3. Electrico\t4. Planta\t5. Hielo\n");
-    printf("6. Lucha\t7. Veneno\t8. Tierra\t9. Volador\t10. Psiquico\t11. Bicho\n");
+    printf("0.  Normal\t1.  Fuego\t2.  Agua\t3.  Electrico\t4.  Planta\t5.  Hielo\n");
+    printf("6.  Lucha\t7.  Veneno\t8.  Tierra\t9.  Volador\t10. Psiquico\t11. Bicho\n");
     printf("12. Roca\t13. Fantasma\t14. Dragon\t15. Siniestro\t16. Acero\t17. Nulo\n\n");
     scanf(" %d %d", &(p.tipo1), &(p.tipo2));
 
     if (p.tipo1 == p.tipo2){
         printf("Los dos tipos del pokemon no pueden ser iguales.\n\n");
+        error = 1;
+    }
+
+    if (p.tipo1 < normal || p.tipo1 > nulo){
+        printf("\nTipo 1 incorrecto.\n");
+        error = 1;
+    }
+
+  if (p.tipo2 < normal || p.tipo2 > nulo){
+        printf("\nTipo 2 incorrecto.\n");
+        error = 1;
+    }
+
+    if (error == 1){
+        error = 0;
         goto inicio;
     }
 
