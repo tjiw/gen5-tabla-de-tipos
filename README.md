@@ -10,7 +10,7 @@ Execute the .bat file in the folder.
 ### Linux/Mac
 Open a terminal window, navigate to the install folder and type:
 #### make
-Alternatively, type: \ \
+Alternatively, type: \ 
 If you want to compile in English:
 #### gcc -g -DINGLES -o typechart typechart.c func.c
 If you want to compile in Spanish:
