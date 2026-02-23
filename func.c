@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-#include "tablatipos.h"
+#include "typechart.h"
 
 void swap(struct efectividad* e1, struct efectividad* e2){
 
@@ -14,55 +14,55 @@ void tipoAString(struct efectividad s, char tipo[]){
 
     switch(s.tipo){
         case normal:
-        strcpy(tipo, "Normal");
+        strcpy(tipo, NORMAL);
         break;
         case fuego:
-        strcpy(tipo, "Fuego");
+        strcpy(tipo, FUEGO);
         break;
         case agua:
-        strcpy(tipo, "Agua");
+        strcpy(tipo, AGUA);
         break;
         case electrico:
-        strcpy(tipo, "Electrico");
+        strcpy(tipo, ELECTRICO);
         break;
         case planta:
-        strcpy(tipo, "Planta");
+        strcpy(tipo, PLANTA);
         break;
         case hielo:
-        strcpy(tipo, "Hielo");
+        strcpy(tipo, HIELO);
         break;
         case lucha:
-        strcpy(tipo, "Lucha");
+        strcpy(tipo, LUCHA);
         break;
         case veneno:
-        strcpy(tipo, "Veneno");
+        strcpy(tipo, VENENO);
         break;
         case tierra:
-        strcpy(tipo, "Tierra");
+        strcpy(tipo, TIERRA);
         break;
         case volador:
-        strcpy(tipo, "Volador");
+        strcpy(tipo, VOLADOR);
         break;
         case psiquico:
-        strcpy(tipo, "Psiquico");
+        strcpy(tipo, PSIQUICO);
         break;
         case bicho:
-        strcpy(tipo, "Bicho");
+        strcpy(tipo, BICHO);
         break;
         case roca:
-        strcpy(tipo, "Roca");
+        strcpy(tipo, ROCA);
         break;
         case fantasma:
-        strcpy(tipo, "Fantasma");
+        strcpy(tipo, FANTASMA);
         break;
         case dragon:
-        strcpy(tipo, "Dragon");
+        strcpy(tipo, DRAGON);
         break;
         case siniestro:
-        strcpy(tipo, "Siniestro");
+        strcpy(tipo, SINIESTRO);
         break;
         case acero:
-        strcpy(tipo, "Acero");
+        strcpy(tipo, ACERO);
         break;
         default:
         strcpy(tipo, "Error");

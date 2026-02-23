@@ -1,2 +1,2 @@
-	gcc -Wall -Wextra -g -o tablatipos tablatipos.c funciones.c
+	gcc -Wall -Wextra -g -o tablatipos typechart.c func.c
     .\tablatipos.exe
