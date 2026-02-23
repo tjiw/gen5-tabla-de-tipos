@@ -1,17 +1,12 @@
 # pokemon-typechart
-Este programa calcula, dados los tipos de un Pokémon, sus resistencias y debilidades junto con sus diferentes multiplicadores. Válido para juegos de la 5ª gen (Blanco y Negro) hacia atrás.
-De momento solo está en español, pero traducirlo al inglés y portearlo a las siguientes generaciones me costaría muy poco; no lo he hecho porque no he visto la necesidad.
+This program calculates, given a Pokémon's typing, its strengths and weaknesses, with their respective multipliers. Currently valid from 5th gen backwards. Available in English and Spanish.
 
-## Requisitos
-Tener instalado el compilador gcc en tu máquina.
-
-## Modo de uso
-Primeramente, descarga el código fuente en formato zip.
+## Requisites
+Having the gcc compiler installed.
+## Usage
+Download the latest release in your language.
 ### Windows
-Ejecuta el .bat en la carpeta del código.
+Execute the .bat file in the folder.
 ### Linux/Mac
-Ejecuta en terminal los comandos: 
-#### gcc -o tablatipos tablatipos.c funciones.c
-#### ./tablatipos
-Alternativamente, escribe en el terminal:
+Open a terminal window and type:
 #### make
